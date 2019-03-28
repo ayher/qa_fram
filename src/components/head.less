@@ -1,0 +1,62 @@
+@screen_height: calc(100vh * 0.08);
+.header {
+  height: @screen_height;
+  text-align: center;
+}
+
+.Logo {
+  margin: 0 auto;
+  @media screen and (max-width: 900px) {
+    height: @screen_height;
+    margin-left: 1%;
+  }
+  img {
+    height: @screen_height;
+    @media screen and (max-width: 900px) {
+      height: calc(@screen_height * 0.6);
+      margin-top: calc(@screen_height * 0.2);
+    }
+  }
+}
+
+.menu {
+  float: right;
+  height: calc(@screen_height * 0.8);
+  padding: calc(@screen_height * 0.1);
+}
+
+.menuItem {
+  &:hover {
+    font-size: 16px;
+  }
+}
+
+.subMenu {
+  img {
+    border-radius: 40px;
+    margin-bottom: calc(@screen_height * 0.1);
+    height: calc(@screen_height * 0.6);
+  }
+}
+
+.captchaItem {
+  Input {
+    width: 50%;
+    margin-right: 5%;
+  }
+  img {
+    height: 32px;
+    margin-bottom: 3px;
+  }
+}
+
+.fromItem {
+  width: 80%;
+  margin-left: 10% !important;
+  a {
+    float: right;
+  }
+  Button {
+    width: 100%;
+  }
+}
